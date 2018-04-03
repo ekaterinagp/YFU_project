@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+img {
+  widows: 100%;
+  height: auto;
+  ;
+}
+
 #frontpage {
   height: 100vh;
   width: 100vw;
@@ -57,7 +63,7 @@ li {
   border: 1px solid #888;
   width: 80%;
   display: none;
-  position: relative;
+  position: absolute;
   z-index: 1;
   padding-top: 100px;
   left: 0;
@@ -77,4 +83,31 @@ li {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+#community {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-color: grey;
+}
+
+.two_parts {
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  grid-gap: 3em;
+  justify-items: center;
+  padding-top: 10em;
+}
+
+#host_family {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-color: rgb(56, 21, 56);
+}
+
+.img_div {
+  height: 300px;
+  width: 400px;
 }
