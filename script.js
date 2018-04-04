@@ -22,34 +22,49 @@ window.onclick = function(event) {
   }
 }
 
+// var inst1 = document.getElementById('inst1');
 
-var slideIndex = 1;
-showDivs(slideIndex);
+// inst1.addEventListener("mouseover", function() {
+//   imageItemHover(inst1, 'block');
+//   console.log("inst1:", "clicked");
+// });
+// inst1.addEventListener("mouseout", function() {
+//   imageItemHover(inst1, 'none');
+// });
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
 
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("slides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {
-    slideIndex = 1
-  }
-  if (n < 1) {
-    slideIndex = x.length
-  }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" opacity-off", "");
-  }
-  x[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " opacity-off";
-}
+// var imageItemHover = function(imageItemElement, option) {
+//   imageItemElement.children[0].style.display = option;
+// }
+
+// var slideIndex = 1;
+// showDivs(slideIndex);
+
+// function plusDivs(n) {
+//   showDivs(slideIndex += n);
+// }
+
+// function currentDiv(n) {
+//   showDivs(slideIndex = n);
+// }
+
+// function showDivs(n) {
+//   var i;
+//   var x = document.getElementsByClassName("slides");
+//   var dots = document.getElementsByClassName("demo");
+//   if (n > x.length) {
+//     slideIndex = 1
+//   }
+//   if (n < 1) {
+//     slideIndex = x.length
+//   }
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";
+//   }
+//   for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(" opacity-off", "");
+//   }
+//   x[slideIndex - 1].style.display = "block";
+//   dots[slideIndex - 1].className += " opacity-off";
+// }
