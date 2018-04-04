@@ -34,6 +34,7 @@ h2 {
 
 #destinations {
   height: 100vh;
+    padding:4em;
   width: 100vw;
   position: relative;
 }
@@ -56,12 +57,11 @@ li {
 }
 
 .country {
-height: 230px;
 display: grid;
 grid-template-rows: 1fr 1fr;
 grid-gap:1em;
 }
-.country>h1{
+h1{
     text-align: center;
     vertical-align: center;
     font-family: 'cafe';
@@ -73,8 +73,6 @@ grid-gap:1em;
   grid-gap: 1em;
   justify-items: center;
   margin-top: 5em;
-margin-left: 5em;
-margin-right: 5em;
 }
 
 .modal-content {
