@@ -5,17 +5,17 @@
 }
 
 img {
-  widows: 100%;
+  width: 100%;
   height: auto;
   ;
 }
 
 #frontpage {
-  height: 100vh;
+  height: 56vw;
   width: 100vw;
   position: relative;
-  z-index: -1;
-  background-image: url("pics/baloon.jpg");
+  z-index: 1;
+  background-image: url("pics/yfu_collage.jpg");
   background-size: cover;
 }
 
@@ -110,4 +110,33 @@ li {
 .img_div {
   height: 300px;
   width: 400px;
+}
+
+/* Slideshow */
+
+slides {
+  display: none;
+}
+
+.demo {
+  cursor: pointer;
+  width: 33%;
+  height: auto;
+}
+
+.content {
+  max-width: 1000px;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-rows: 3fr 3fr;
+  grid-gap: 2em;
+  justify-items: center;
+}
+
+#instagram {
+  padding-top: 5em;
+  padding-left: 20em;
 }
