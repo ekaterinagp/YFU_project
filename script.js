@@ -1,24 +1,24 @@
 document.onre
 
-var peru = document.getElementById('peru');
-console.log("peru: ", peru);
+var china = document.getElementById('china');
+console.log("china: ", china);
 var span = document.getElementsByClassName("close")[0];
-var peruModal = document.querySelector(".peru-modal");
+var chinaModal = document.querySelector(".china-modal");
 
-peru.addEventListener("click", function() {
-  peruModal.style.display = "block";
-  console.log("peru clicked", peruModal);
+china.addEventListener("click", function() {
+  chinaModal.style.display = "block";
+  console.log("china clicked", chinaModal);
 });
 
 
 span.onclick = function() {
-  peruModal.style.display = "none";
+  chinaModal.style.display = "none";
 }
 
 window.onclick = function(event) {
   console.log("window.onclick", event.target);
-  if (event.target == peruModal) {
-    peruModal.style.display = "none";
+  if (event.target == chinaModal) {
+    chinaModal.style.display = "none";
   }
 }
 
