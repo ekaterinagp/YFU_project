@@ -3,17 +3,24 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-img {
-  width: 100%;
-  height: auto;
-}
-
 @font-face {
   font-family: cafe;
   src: url('fonts/cafe_francois.otf');
 }
-
+img {
+    width: 100%;
+}
+img.logo {
+  width: 117%;
+    position: relative;
+    left: -7%;
+    top: -2vw;
+  height: auto;
+}
+img.logo-black {
+    opacity: .8;
+    display: none;
+}
 h2 {
   font-family: 'cafe';
 }
@@ -163,21 +170,55 @@ div.text:hover {
 }
 
 footer {
-  background-color: rgb(212, 211, 211);
-  color: #555555;
-  width: 100vw;
-  height: 50vh;
+    background-color: rgba(0,0,0,.07);
+    padding: 5vw;
+    color: #555555;
+    font-family: sans-serif;
+    width: 100vw;
+    font-size: .9em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 50px;
 }
-
-.contacts {
-  display: grid;
-  grid-template-columns: 3fr 3fr;
-  grid-gap: 3em;
-  justify-items: center;
-  padding-top: 5vw;
+.bold {
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: .5em;
 }
-
+img.yfu-logo {
+    width: 29vw;
+    min-width: 230px;
+    display: block;
+    opacity: .8;
+}
+.icons {
+    padding-left: calc(45vw - 400px);
+}
+.social-media-logo {
+    width: 50px;
+    margin: 0 20 20px 0;
+}
 .copyright {
-  padding-left: 80vh;
-  padding-top: 17vh;
+    padding-top: 1em;
+    font-size: .7em;
+    grid-column: 1/-1;
+}
+.copyright p {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 480px) {
+    footer {
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+    }
+    .copyright {
+        position: relative;
+        top: -30px; /* because of row gap of 30px */
+    }
+    .copyright p {
+        text-align: left;
+    }
 }
