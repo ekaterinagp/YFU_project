@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
-
 }
 
 p {
@@ -16,7 +15,6 @@ p {
 }
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 #frontpage {
   width: 100vw;
   overflow: hidden;
@@ -45,50 +43,58 @@ img.logo {
 }
 
 img.logo-black {
-    width: 77%;
-    left: -3%;
-    top: 0;
-    opacity: 0;
+  width: 77%;
+  left: -3%;
+  top: 0;
+  opacity: 0;
 }
 
 img.logo-black.show {
-    animation: showLogo 1s ease-in forwards;
+  animation: showLogo 1s ease-in forwards;
 }
 
 @keyframes showLogo {
-    to {
-        opacity: .83;
-    }
+  to {
+    opacity: .83;
+  }
 }
+
 #frontpage ul li a {
-    color:  white;
+  color: white;
 }
+
 .ul-sticky li a {
-    color: rgba(0,0,0,.8);
-    font-weight: bold;
+  color: rgba(0, 0, 0, .8);
+  font-weight: bold;
 }
+
 #frontpage ul {
-    width: 43vw;
-    font-size: 1.3vw;
-    position: absolute;
-    top: 20px;
-    right: 4vw;
+  width: 43vw;
+  font-size: 1.3vw;
+  position: absolute;
+  top: 20px;
+  right: 4vw;
 }
+
 .ul-sticky {
-    width: 57vw;
-    opacity: 0;
-    right: -1vw;
+  width: 57vw;
+  opacity: 0;
+  right: -1vw;
 }
+
 .ul-sticky li {
-    font-size: 1.3vw;
-    right: .7vw;
+  font-size: 1.3vw;
+  right: .7vw;
 }
+
 .ul-sticky.show {
-    animation: showLogo 1s ease-in forwards;
-    z-index: 100;
+  animation: showLogo 1s ease-in forwards;
+  z-index: 100;
 }
-#frontpage ul li, .ul-sticky li {
-    margin-left: 4vw;
+
+#frontpage ul li,
+.ul-sticky li {
+  margin-left: 4vw;
 }
 
 h2 {
@@ -105,15 +111,15 @@ h2 {
   width: 100vw;
   position: relative;
   z-index: 1;
-  background-image: url("pics/hero-with-purple-logo-circle_1200x750.png");
+  background-image: url("pics/purple-logo-sun-hero-writing.png");
   background-size: cover;
 }
 
 #destinations {
   height: auto;
   padding-top: 11vw;
-    padding-left:8em;
-    padding-right: 8em;
+  padding-left: 8em;
+  padding-right: 8em;
   width: 100vw;
   position: relative;
 }
@@ -345,20 +351,18 @@ img.yfu-logo {
 }
 
 @media screen and (max-width: 768px) {
-    #frontpage ul {
-        width: 61vw;
-        font-size: 2vw;
-        position: absolute;
-        top: 7px;
-        right: 1vw;
-    }
-
-    .ul-sticky li {
-        font-size: 2vw;
-        right: .7vw;
-        margin-left: 2vw;
-    }
-
+  #frontpage ul {
+    width: 61vw;
+    font-size: 2vw;
+    position: absolute;
+    top: 7px;
+    right: 1vw;
+  }
+  .ul-sticky li {
+    font-size: 2vw;
+    right: .7vw;
+    margin-left: 2vw;
+  }
   .wrapper {
     grid-template-columns: 1fr 1fr;
     grid-gap: 2em;
@@ -367,7 +371,7 @@ img.yfu-logo {
   }
   #destinations {
     padding: 0;
-    margin-top: 11vw;
+    /* margin-top: 11vw; */
   }
   #destinations img {
     width: 37vw;
@@ -379,11 +383,10 @@ img.yfu-logo {
     display: none;
   }
   .images {
-    width: 184px;
-    height: 184px;
+    width: 50%;
+    height: auto;
     float: right;
     position: relative;
-    padding-left: 5px;
     cursor: pointer;
   }
   .text {
@@ -402,14 +405,12 @@ img.yfu-logo {
     display: block;
     padding-top: 70px;
   }
-
 }
 
 @media screen and (max-width: 480px) {
-    #frontpage ul li {
-        display: block;
-    }
-
+  #frontpage ul li {
+    display: block;
+  }
   footer {
     grid-template-columns: 1fr;
     grid-row-gap: 30px;
@@ -426,52 +427,27 @@ img.yfu-logo {
     grid-template-rows: 2fr 1fr;
   }
   #destinations {
-    padding-top: 4em;
+    /* padding-top: 4em;*/
     padding-left: 1em;
     padding-right: 1em;
   }
   .two_parts {
     display: block;
     padding-top: 0;
+    padding-left: 1em;
+    padding-right: 1em;
   }
   #instagram {
     padding-top: 0;
   }
   #frontpage {
-    background-image: url('pics/vertical-hero.png');
-    /* background-size: contain; */
+    background-image: url('pics/vertical-hero-writing.png');
+    background-size: contain;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
   }
-}
-
-@media screen and (max-width: 480px) {
-  footer {
-    grid-template-columns: 1fr;
-    grid-row-gap: 30px;
-  }
-  .copyright {
-    position: relative;
-    top: -30px;
-    /* because of row gap of 30px */
-  }
-  .copyright p {
-    text-align: left;
-  }
-  .country {
-    grid-template-rows: 2fr 1fr;
-  }
-  #destinations {
-    padding-top: 4em;
-    padding-left: 1em;
-    padding-right: 1em;
-  }
   .modal-content {
     margin-top: 40%;
-  }
-  .two_parts {
-    padding-left: 1em;
-    padding-right: 1em;
   }
 }
