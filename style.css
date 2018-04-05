@@ -111,7 +111,7 @@ h2 {
   width: 100vw;
   position: relative;
   z-index: 1;
-  background-image: url("pics/purple-logo-sun-hero-writing.png");
+  background-image: url("pics/purple-logo-sun-hero.png");
   background-size: cover;
 }
 
@@ -330,7 +330,7 @@ img.yfu-logo {
   grid-template-columns: 3fr 3fr 3fr 3fr;
   grid-gap: 2em;
   justify-items: center;
-  margin-top: 5em;
+  margin-top: 0;
 }
 
 .container {
@@ -348,6 +348,7 @@ img.yfu-logo {
 
 .inst {
   text-align: center;
+  margin-bottom: 0.5em;
 }
 
 @media screen and (max-width: 768px) {
