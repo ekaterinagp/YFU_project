@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 @font-face {
   font-family: cafe;
   src: url('fonts/cafe_francois.otf');
@@ -52,8 +56,8 @@ h2 {
 #destinations {
   height: auto;
   padding-top: 4em;
-    padding-left:8em;
-    padding-right: 8em;
+  padding-left: 8em;
+  padding-right: 8em;
   width: 100vw;
   position: relative;
 }
@@ -229,14 +233,13 @@ img.yfu-logo {
 }
 
 .two_parts {
-    display: grid;
-    grid-template-columns: 3fr 3fr;
-    grid-gap: 3em;
-    justify-items: center;
-    padding-top: 10em;
-    padding-left: 8em;
-    padding-right: 8em;
-
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  grid-gap: 3em;
+  justify-items: center;
+  padding-top: 10em;
+  padding-left: 8em;
+  padding-right: 8em;
 }
 
 #host_family {
@@ -244,8 +247,6 @@ img.yfu-logo {
   width: 100vw;
   position: relative;
 }
-
-
 
 .wrapper {
   display: grid;
@@ -307,6 +308,13 @@ img.yfu-logo {
     opacity: 0;
     margin-left: .7em;
   }
+  .two_parts {
+    display: block;
+    padding-top: 0;
+  }
+  #instagram {
+    padding-top: 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -333,8 +341,8 @@ img.yfu-logo {
   .modal-content {
     margin-top: 40%;
   }
-    .two_parts{
-        padding-left: 1em;
-        padding-right: 1em;
-    }
+  .two_parts {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
