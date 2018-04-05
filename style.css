@@ -450,4 +450,75 @@ img.yfu-logo {
   .modal-content {
     margin-top: 40%;
   }
+  #frontpage ul {
+    width: 61vw;
+    font-size: 2vw;
+    position: absolute;
+    top: 7px;
+    right: 1vw;
+  }
+  .ul-sticky,
+  .logo-black {
+    display: none;
+  }
+  #frontpage ul li {
+    margin-bottom: 3vw;
+    display: block;
+    text-align: right;
+    margin-right: 3vw;
+  }
+  #frontpage ul li a {
+    font-size: 4vw;
+  }
+  .ul-sticky li {
+    font-size: 2vw;
+    right: .7vw;
+    margin-left: 2vw;
+  }
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    justify-items: center;
+    margin-top: 5em;
+  }
+  #destinations {
+    padding: 0;
+    /* margin-top: 11vw; */
+  }
+  #destinations img {
+    width: 37vw;
+  }
+  .mobile {
+    display: block;
+  }
+  .container {
+    display: none;
+  }
+  .images {
+    width: 50%;
+    height: auto;
+    float: right;
+    position: relative;
+    cursor: pointer;
+  }
+  .text {
+    position: absolute;
+    height: 100%;
+    display: block;
+    width: 184px;
+    height: 184px;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.87);
+    cursor: pointer;
+    opacity: 0;
+    margin-left: .7em;
+  }
+  .two_parts {
+    display: block;
+    padding-top: 70px;
+  }
+  img.logo {
+    width: 205vw;
+    left: -7.7vw;
+  }
 }
