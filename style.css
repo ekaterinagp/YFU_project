@@ -22,6 +22,15 @@ img {
   width: 100%;
 }
 
+.diplom{
+    grid-column-start: 2;
+    grid-row: 1;
+}
+.column{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
 img.logo {
   width: 117%;
   position: relative;
