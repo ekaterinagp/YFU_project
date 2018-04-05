@@ -94,8 +94,7 @@ h1 {
 
 .modal-content {
   background-color: rgba(250, 250, 250, .8);
-  margin: auto;
-  margin-top: 10%;
+  margin-top: 20%;
   margin-left: 10%;
   margin-right: 10%;
   padding: 20px;
@@ -289,5 +288,8 @@ img.yfu-logo {
         padding-top: 4em;
         padding-left: 1em;
         padding-right:1em;
+    }
+    .modal-content {
+        margin-top: 40%;
     }
 }
