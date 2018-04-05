@@ -68,6 +68,7 @@ li {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-gap: 1em;
+  cursor: pointer;
 }
 
 h1 {
