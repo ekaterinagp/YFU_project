@@ -10,9 +10,10 @@
 }
 
 #frontpage {
-    width: 100vw;
-    overflow: hidden;
+  width: 100vw;
+  overflow: hidden;
 }
+
 img {
   width: 100%;
 }
@@ -58,8 +59,9 @@ h2 {
 }
 
 #destinations img {
-    width: 17vw;
+  width: 17vw;
 }
+
 a {
   text-decoration: none;
 }
@@ -214,24 +216,18 @@ img.yfu-logo {
 }
 
 .copyright {
-    grid-column: 1/-1;
-}
-.copyright p {
-    text-align: center;
-    font-size: .8em;
+  grid-column: 1/-1;
 }
 
-.container {
-    width: 60vw;
-    display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
-    /* grid-gap: 20px; */
-    justify-items: center;
-    margin-left: 20vw;
+.copyright p {
+  text-align: center;
+  font-size: .8em;
 }
+
 #instagram {
-    padding: 5em 0;
+  padding: 5em 0;
 }
+
 .two_parts {
     display: grid;
     grid-template-columns: 3fr 3fr;
@@ -240,36 +236,56 @@ img.yfu-logo {
     padding-top: 10em;
     padding-left: 8em;
     padding-right: 8em;
+
 }
+
 #host_family {
-    height: 100vh;
-    width: 100vw;
-    position: relative;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
 }
-.img_div {
-    padding-left: 5em;
-}
+
+
+
 .wrapper {
-    display: grid;
-    grid-template-columns: 3fr 3fr 3fr 3fr;
-    grid-gap: 2em;
-    justify-items: center;
-    margin-top: 5em;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  grid-gap: 2em;
+  justify-items: center;
+  margin-top: 5em;
+}
+
+.container {
+  width: 60vw;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  /* grid-gap: 20px; */
+  justify-items: center;
+  margin-left: 20vw;
 }
 
 @media screen and (max-width: 768px) {
-    .wrapper {
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 2em;
-        justify-items: center;
-        margin-top: 5em;
-    }
-    #destinations {
-        padding: 0;
-    }
-    #destinations img {
-        width: 37vw;
-    }
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    justify-items: center;
+    margin-top: 5em;
+  }
+  #destinations {
+    padding: 0;
+  }
+  #destinations img {
+    width: 37vw;
+  }
+  .container {
+    display: block;
+  }
+  .images {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    float: right;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -285,15 +301,19 @@ img.yfu-logo {
   .copyright p {
     text-align: left;
   }
-    .country{
-         grid-template-rows: 2fr 1fr;
-    }
-    #destinations{
-        padding-top: 4em;
+  .country {
+    grid-template-rows: 2fr 1fr;
+  }
+  #destinations {
+    padding-top: 4em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .modal-content {
+    margin-top: 40%;
+  }
+    .two_parts{
         padding-left: 1em;
-        padding-right:1em;
-    }
-    .modal-content {
-        margin-top: 40%;
+        padding-right: 1em;
     }
 }
