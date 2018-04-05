@@ -49,12 +49,15 @@ h2 {
 }
 
 #destinations {
-  height: 100vh;
+  height: auto;
   padding: 4em;
   width: 100vw;
   position: relative;
 }
 
+#destinations img {
+    width: 17vw;
+}
 a {
   text-decoration: none;
 }
@@ -70,7 +73,7 @@ li {
 
 .country {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 4fr 1fr;
   grid-gap: 1em;
   cursor: pointer;
 }
@@ -251,6 +254,20 @@ img.yfu-logo {
     margin-top: 5em;
 }
 
+@media screen and (max-width: 768px) {
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2em;
+        justify-items: center;
+        margin-top: 5em;
+    }
+    #destinations {
+        padding: 0;
+    }
+    #destinations img {
+        width: 37vw;
+    }
+}
 
 @media screen and (max-width: 480px) {
   footer {
