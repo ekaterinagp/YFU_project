@@ -73,7 +73,7 @@ li {
 
 .country {
   display: grid;
-  grid-template-rows: 4fr 1fr;
+  grid-template-rows: 3fr 1fr;
   grid-gap: 1em;
   cursor: pointer;
 }
@@ -282,4 +282,12 @@ img.yfu-logo {
   .copyright p {
     text-align: left;
   }
+    .country{
+         grid-template-rows: 2fr 1fr;
+    }
+    #destinations{
+        padding-top: 4em;
+        padding-left: 1em;
+        padding-right:1em;
+    }
 }
