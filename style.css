@@ -269,6 +269,10 @@ img.yfu-logo {
   display: none;
 }
 
+.inst {
+  text-align: center;
+}
+
 @media screen and (max-width: 768px) {
   .wrapper {
     grid-template-columns: 1fr 1fr;
@@ -315,34 +319,32 @@ img.yfu-logo {
   #instagram {
     padding-top: 0;
   }
-}
-
-@media screen and (max-width: 480px) {
-  footer {
-    grid-template-columns: 1fr;
-    grid-row-gap: 30px;
+  @media screen and (max-width: 480px) {
+    footer {
+      grid-template-columns: 1fr;
+      grid-row-gap: 30px;
+    }
+    .copyright {
+      position: relative;
+      top: -30px;
+      /* because of row gap of 30px */
+    }
+    .copyright p {
+      text-align: left;
+    }
+    .country {
+      grid-template-rows: 2fr 1fr;
+    }
+    #destinations {
+      padding-top: 4em;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+    .modal-content {
+      margin-top: 40%;
+    }
+    .two_parts {
+      padding-left: 1em;
+      padding-right: 1em;
+    }
   }
-  .copyright {
-    position: relative;
-    top: -30px;
-    /* because of row gap of 30px */
-  }
-  .copyright p {
-    text-align: left;
-  }
-  .country {
-    grid-template-rows: 2fr 1fr;
-  }
-  #destinations {
-    padding-top: 4em;
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-  .modal-content {
-    margin-top: 40%;
-  }
-  .two_parts {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-}
